@@ -3840,6 +3840,11 @@ section.projects_area.p_120 .filter a {
   padding-bottom: 1em;
 }
 
+.welcome_area .p_120 {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
 /* responsive design */
 @media (min-width: 769px) {
   .banner_content {
