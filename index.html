@@ -38,6 +38,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/work-experience.css" />
+    <link rel="stylesheet" href="css/contect-me.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
@@ -111,7 +112,14 @@
                   </ul> -->
                 <!-- </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="#contact-form">Contact</a>
+                </li>
+                <li class="nav-item hire-me">
+                  <a
+                    class="hire-me-btn banner_btn"
+                    href="https://wa.me/8801845310142"
+                    >Hire Me!</a
+                  >
                 </li>
               </ul>
             </div>
@@ -145,7 +153,7 @@
             >
               <div class="banner_content">
                 <h5>Hi, I'm Md. Nazmul Islam Nayem</h5>
-                <h2>Front-End Developer & Shopify Expert</h2>
+                <h2>Shopify Expert & Front-End Developer</h2>
                 <p>
                   I design and build modern websites with clean code, responsive
                   design, and great UX — let’s convert your website visitors
@@ -292,9 +300,9 @@
       </div>
 
       <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item" data-aos="fade-left">
           <div class="timeline-marker"></div>
-          <div class="timeline-content">
+          <div class="timeline-content" data-aos="fade-right">
             <div class="job-header">
               <h3 class="job-title">Senior Shopify Developer</h3>
               <div class="company-name">
@@ -319,7 +327,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item" data-aos="fade-left">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="job-header">
@@ -350,7 +358,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item" data-aos="fade-left">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="job-header">
@@ -519,10 +527,12 @@
               <img
                 class="img-fluid"
                 src="img/projects/cimon-thailand.png"
-                alt=""
+                alt="Cimon Thailand"
               />
               <div class="projects_text">
-                <a href="https://groomology.co/"><h4>Industrial Parts</h4></a>
+                <a href="https://cimonthailand.com/"
+                  ><h4>Industrial Parts</h4></a
+                >
                 <p>Multi-product Store</p>
               </div>
             </div>
@@ -672,6 +682,177 @@
     </section>
     <!--================End Testimonials Area =================-->
 
+    <!--================ Contact form =================-->
+    <section class="contact-section" id="contact-form">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>
+          Ready to start your next project? Let's discuss how we can work
+          together to bring your ideas to life.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>
+            I'm always open to discussing new opportunities, creative projects,
+            and potential collaborations. Feel free to reach out!
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="./img/elements/gmail.svg" alt="gmail" width="25" />
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <span>nazmulislam4581@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="./img/elements/phone.svg" alt="gmail" width="25" />
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <span>+880 1845 310142</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img
+                  src="./img/elements/location.svg"
+                  alt="location"
+                  width="25"
+                />
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img
+                  src="./img/elements/clock.svg"
+                  alt="response time"
+                  width="25"
+                />
+              </div>
+              <div class="contact-text">
+                <h4>Response Time</h4>
+                <span>Within 1 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">💼</a>
+            <a href="#" class="social-link" title="GitHub">💻</a>
+            <a href="#" class="social-link" title="Twitter">🐦</a>
+            <a href="#" class="social-link" title="Instagram">📷</a>
+          </div> -->
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/myzdkqdk"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission"
+            />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  class="form-control"
+                  placeholder="John"
+                  required
+                />
+                <div class="field-error" id="firstNameError"></div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  class="form-control"
+                  placeholder="Doe"
+                  required
+                />
+                <div class="field-error" id="lastNameError"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="john.doe@example.com"
+                required
+              />
+              <div class="field-error" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control"
+                placeholder="Project Discussion"
+                required
+              />
+              <div class="field-error" id="subjectError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+              <div class="field-error" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              Send Message
+            </button>
+
+            <div class="success-message" id="successMessage">
+              ✅ Thank you! Your message has been sent successfully. I'll get
+              back to you soon.
+            </div>
+
+            <div class="error-message" id="errorMessage">
+              ❌ Oops! Something went wrong. Please try again later.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--================ End Contact form =================-->
+
     <!--================Latest Blog Area =================-->
     <!-- <section id="blogs" class="latest_blog_area p_120">
       <div class="container">
@@ -794,7 +975,7 @@
               </p>
             </aside>
           </div>
-          <div class="col-lg-5 col-sm-6">
+          <!-- <div class="col-lg-5 col-sm-6">
             <aside class="f_widget news_widget">
               <div class="f_title">
                 <h3>Newsletter</h3>
@@ -827,7 +1008,7 @@
                 </form>
               </div>
             </aside>
-          </div>
+          </div> -->
           <div class="col-lg-2">
             <aside class="f_widget social_widget">
               <div class="f_title">
@@ -886,6 +1067,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/contact-me.js"></script>
 
     <!-- extra js file -->
     <script src="js/work-experience.js"></script>

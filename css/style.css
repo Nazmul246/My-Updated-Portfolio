@@ -71,6 +71,9 @@ body {
   font-weight: normal;
   color: #777777;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -3843,6 +3846,23 @@ section.projects_area.p_120 .filter a {
 .welcome_area .p_120 {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
+}
+
+/* hire me button */
+li.nav-item.hire-me {
+  display: flex;
+  align-items: center;
+}
+
+.hire-me-btn {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 0 30px;
+}
+
+.row.footer_inner {
+  justify-content: space-between;
 }
 
 /* responsive design */
